@@ -1,0 +1,1 @@
+select surname FROM TABLE_NAME WHERE experience = (select MAX(experience) FROM TABLE_NAME WHERE  experience NOT IN (select MAX(experience) FROM TABLE_NAME));
